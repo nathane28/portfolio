@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0c18c9;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        footer {
+            background: #0078d7; 
+            color: white;
+            padding: 5px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .headshot {
+            display: inline-block;
+        }
+
+        .icons a img {
+            width: 30px;
+            height: 30px;
+            margin-left: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .icons a img:hover {
+            transform: scale(1.1);
+        }
+
+        #about {
+            background-color: #ffffff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nathan Edwards </h1>
+
+        <nav>
+            <a href="#about">About Me</a>
+        </nav>
+
+        <div class = "icons">
+            <a href ="https://github.com/nathane28" target ="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            </a>
+
+            <a href="https://www.linkedin.com/in/nathane28" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+            </a>
+        </div>
+
+    </header>
+</body>
+
+</html>

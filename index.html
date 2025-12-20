@@ -20,12 +20,20 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            gap: 2rem;
         }
-        
+
         header h1 {
             margin: 0;
             font-size: 1.5rem;
             font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 30rem;
+            justify-content: center;
+            flex: 1;
         }
 
         nav a {
@@ -70,6 +78,37 @@
             transform: scale(1.1);
         }
 
+        #intro {
+            background-color: grey;
+            padding: 5rem 2rem;
+        }
+
+        .intro-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .intro-photo img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 75%;
+            box-shadow: 0 4px 8px rgba(1, 25, 238, 0.15);
+        }
+
+        .intro-text h2 {
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.7rem;
+            line-height: 1.7;
+        }
+
         #about, #contact {
             background-color: #ffffff;
             padding: 4rem 2rem;
@@ -89,6 +128,14 @@
             text-decoration: underline;
         }
 
+        /* Try to make mobile friendly */
+        @media (max-width: 768px) {
+            .intro-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
     </style>
 </head>
 
@@ -98,7 +145,7 @@
 
         <nav>
             <a href="#about">About Me</a>
-            <a href="contact">Contact Info</a>
+            <a href="#contact">Contact Info</a>
         </nav>
 
         <div class = "icons">
@@ -106,12 +153,43 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
             </a>
 
-            <a href="https://www.linkedin.com/in/nathane28" target="_blank">
+            <a href="https://www.linkedin.com/in/nathan-edwards-62889a274/" target="_blank">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
             </a>
         </div>
 
     </header>
+
+    <main>
+        <section id="intro">
+            <div class="intro-container">
+        
+                <div class="intro-photo">
+                    <img src="your-photo.jpg" alt="Nathan Edwards headshot">
+                </div>
+
+            <div class="intro-text">
+                <h2>Welcome</h2>
+                    <p>
+                        My name is Nathan Edwards and I am a current student at the University of Kentucky studying Computer Science.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>About me section</p>
+            
+        </section>
+
+        <section id="contact">
+            <h2>Contact Info</h2>
+            <p>Contact Info</p>
+            <a href="mailto:nathanedwards28@gmail.com">Email Me</a>
+        </section>
+    </main>
 </body>
 
 </html>
